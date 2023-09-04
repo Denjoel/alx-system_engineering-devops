@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 | paste -s -d "
+awk '{rint substr($01,1)}' input.txt | tr -d '\n'
